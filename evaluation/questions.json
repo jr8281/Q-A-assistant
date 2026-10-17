@@ -1,0 +1,20 @@
+{
+  "answerable": [
+    {"question": "What are the four core functions of the AI RMF?", "source": "NIST.AI.100-1.pdf", "pages": [8, 25]},
+    {"question": "What characteristics make an AI system trustworthy?", "source": "NIST.AI.100-1.pdf", "pages": [17]},
+    {"question": "What is the difference between explainability and interpretability?", "source": "NIST.AI.100-1.pdf", "pages": [21]},
+    {"question": "Which risks are unique to or exacerbated by generative AI?", "source": "NIST.AI.600-1.pdf", "pages": [7, 8]},
+    {"question": "How could generative AI ease access to CBRN information?", "source": "NIST.AI.600-1.pdf", "pages": [8, 9]},
+    {"question": "What are the six core functions of CSF 2.0?", "source": "NIST.CSWP.29.pdf", "pages": [8]},
+    {"question": "What are CSF organizational profiles?", "source": "NIST.CSWP.29.pdf", "pages": [6]},
+    {"question": "Which CSF functions should happen continuously?", "source": "NIST.CSWP.29.pdf", "pages": [10]},
+    {"question": "Why is cybersecurity supply chain risk management important?", "source": "NIST.CSWP.29.pdf", "pages": [18]}
+  ],
+  "unanswerable": [
+    "Who won the FIFA World Cup in 2022?",
+    "How do I bake sourdough bread?",
+    "What is the capital of Japan?",
+    "How do I fix a flat bicycle tire?",
+    "What is the current stock price of Nvidia?"
+  ]
+}

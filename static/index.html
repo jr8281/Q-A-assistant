@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Q&amp;A Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <main class="page">
+        <header>
+            <h1>PDF Q&amp;A Assistant</h1>
+            <p class="subtitle">Ask questions about your PDFs and get answers with page-level citations.</p>
+            <p class="corpus" id="corpus"></p>
+        </header>
+
+        <form id="searchForm">
+            <div class="search-box">
+                <textarea id="queryInput" rows="2" placeholder="Type your question here..." required minlength="3" maxlength="500"></textarea>
+                <button type="submit" id="submitBtn">Ask</button>
+            </div>
+            <div class="options">
+                <label for="topK">Show</label>
+                <select id="topK">
+                    <option value="1">1</option>
+                    <option value="3" selected>3</option>
+                    <option value="5">5</option>
+                </select>
+                <span>sources</span>
+            </div>
+        </form>
+
+        <div class="examples" id="examples"></div>
+        <div id="error" class="error" hidden></div>
+
+        <section id="results" hidden>
+            <div class="results-head">
+                <h2>Results</h2>
+                <span id="count"></span>
+            </div>
+            <article class="card">
+                <div class="label">AI ANSWER</div>
+                <div id="answerBox" class="answer"></div>
+                <div id="meta" class="meta"></div>
+            </article>
+            <div id="sourcesBox"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>PDF Q&amp;A Assistant · RAG with FastAPI</span>
+        <span>BM25 + BGE embeddings (PyTorch) + GPT-OSS 120B via Groq</span>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

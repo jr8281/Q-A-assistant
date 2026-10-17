@@ -1,0 +1,19 @@
+# Secrets and environments
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Generated at runtime
+cache/
+
+# Editor and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
